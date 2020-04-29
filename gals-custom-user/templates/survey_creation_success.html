@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+You successfully created <li>{{survey.topic}}</li>!
+<br>
+<a href="{% url 'index' %}">Return to All Surveys</a>
+<br>
+{% endblock %}

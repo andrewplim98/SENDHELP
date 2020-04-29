@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<p>
+    all dates in form (dd/mm/yyyy)
+</p>
+
+<form method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit" value="submit">Submit</button>
+</form>
+{% endblock %}
